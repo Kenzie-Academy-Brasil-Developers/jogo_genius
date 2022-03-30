@@ -28,3 +28,16 @@ h2{
     font-size: 1.5em;
     text-transform: uppercase;
 }
+
+button{
+    background-color: #F3B562;
+    font-family: 'Jura', sans-serif;
+    color:#5C4B51;
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 10vw;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
