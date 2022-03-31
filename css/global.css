@@ -13,7 +13,7 @@
 html{
     background-color: #F2EBBF;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1{
