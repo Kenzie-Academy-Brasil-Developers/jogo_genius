@@ -2,7 +2,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url(); */
+    background-color: #666666;
     border: 8px solid black;
     background-size: contain;
-
 }
+
+@media screen and (max-width: 936px){
+    .painelWrapper .painelElements{
+        min-height: 268px;
+        min-width: 79.8%;
+    } 
+}
+
+.painelElements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+/*led*/
+
+.gameLedPainel-template{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    width: 100%;
+}
+
+.led{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: solid 5px #202020;
+    /* background-image: url(); */
+    background-color: #5C4B51;
+    background-size: contain;
+    box-shadow: -2px 7px #827e7f;
+}
+
+/*buttons*/
