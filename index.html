@@ -6,12 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genius</title>
+    <link rel="stylesheet" href="css/links.css">
 </head>
 
 <body>
     <header>
-        <h1>Genius</h1>
-        <h2>o clássico dos anos 80 está de volta!</h2>
     </header>
     <main>
         <section class="rulesSection">
@@ -46,7 +45,65 @@
 
             </div>
         </section>
+
+        <section id = "feedbackSection">
+
+            <div class="gameLedPainel-template">
+                <div class="led lvl.1"></div>
+                <div class="led lvl.2"></div>
+                <div class="led lvl.3"></div>
+                <div class="led lvl.4"></div>
+                <div class="led lvl.5"></div>
+            </div>
+
+            <div class="feedbackButtons">
+                <button id="playButton" class="geniusGameInteraction">jogar</button>
+                <p id="feedback" class="geniusGameInteraction">acertou!</p>
+            </div>
+            
+        </section>
+
+        <section id = "geniusSection">
+            <div class ="gameLedPainel-template">
+                <div class="led lvl.1"></div>
+                <div class="led lvl.2"></div>
+                <div class="led lvl.3"></div>
+                <div class="led lvl.4"></div>
+                <div class="led lvl.5"></div>
+            </div>
+
+            <div id="game-template">
+                <div order=1 class="geniusButton"></div>
+                <div order=2 class="geniusButton"></div>
+                <div order=3 class="geniusButton"></div>
+                <div order=4 class="geniusButton"></div>
+                <div order=5 class="geniusButton"></div>
+                <div order=6 class="geniusButton"></div>
+                <div order=7 class="geniusButton"></div>
+                <div order=8 class="geniusButton"></div>
+                <div order=9 class="geniusButton"></div>
+            </div>
+        </section>
+
+        <section id="scoreSection">
+            <div id="highestScore" class="scoreWrapper">
+                <p>maior pontuação</p>
+                <p class="score">0</p>
+            </div>
+
+            <div id="currentScore" class="scoreWrapper">
+                <p>pontuação atual</p>
+                <p class="score">0</p>
+            </div>
+        </section>
     </main>
+    <footer>
+        <section id="authorIfo">
+            <small>criado por mariana spinola e marcelo soares</small>
+            <small>2021 - kenzie academy</small>
+        </section>
+    </footer>
+    <script src="js/createElements.js"></script>
 </body>
 
 </html>

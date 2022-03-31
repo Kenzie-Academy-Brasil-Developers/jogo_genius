@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');/*h1 font*/
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap'); /*h2 font*/
+/*
+#F06060
+#F3B562
+#F2EBBF
+#8CBEB2
+#5C4B51
+#666666
+*/
+
+html{
+    background-color: #F2EBBF;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1{
+    color: #F06060;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 6em;
+    text-transform: uppercase;
+}
+
+h2{
+    color:#5C4B51;
+    font-family: 'Jura', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+button{
+    background-color: #F3B562;
+    font-family: 'Jura', sans-serif;
+    color:#5C4B51;
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 10vw;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
