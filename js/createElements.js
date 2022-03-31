@@ -1,3 +1,4 @@
+headerElements()
 let order = [];
 let clickedOrder = [];
 let score = 0;
@@ -37,7 +38,7 @@ function shuffleOrder(){
     clickedOrder = [];
 
     for (let i=0; i < order.length; i++) {
-       lightColor(order[i], Number(i) + 1)
+        lightColor(order[i], Number(i) + 1)
     }
 }
 

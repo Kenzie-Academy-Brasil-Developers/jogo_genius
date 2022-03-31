@@ -49,27 +49,33 @@
 
             </div>
         </section>
+        <div class="playButton">
+            <button id="playButton" class="geniusGameInteraction">
+                play
+            </button>
+        </div>
 
+        <!-- led reaction -->
         <section id="geniusSection">
-                <div id="gameLedPainel-template">
-                    <div class="led lvl.1"></div>
-                    <div class="led lvl.2"></div>
-                    <div class="led lvl.3"></div>
-                    <div class="led lvl.4"></div>
-                    <div class="led lvl.5"></div>
-                </div>
-                
-                <div id="game-template">
-                    <div order=1 class="geniusButton" style="background-color: black;" onclick="click(0)">0</div>
-                    <div order=2 class="geniusButton"style="background-color: blue;" onclick="click(1)">1</div>
-                    <div order=3 class="geniusButton"style="background-color: pink;" onclick="click(2)">2</div>
-                    <div order=4 class="geniusButton"style="background-color: red;" onclick="click(3)">3</div>
-                    <div order=5 class="geniusButton"style="background-color: green;" onclick="click(4)">4</div>
-                    <div order=6 class="geniusButton"style="background-color: yellow;" onclick="click(5)">5</div>
-                    <div order=7 class="geniusButton"style="background-color: gray;" onclick="click(6)">6</div>
-                    <div order=8 class="geniusButton"style="background-color: brown;" onclick="click(7)">7</div>
-                    <div order=9 class="geniusButton"style="background-color: purple;" onclick="click(8)">8</div>
-                </div>
+            <div class="gameLedPainel-template">
+                <div class="led lvl.1"></div>
+                <div class="led lvl.2"></div>
+                <div class="led lvl.3"></div>
+                <div class="led lvl.4"></div>
+                <div class="led lvl.5"></div>
+            </div>
+            <!-- botoes -->
+            <div id="game-template">
+                <div order=1 class="geniusButton" onclick="click(0)">0</div>
+                <div order=2 class="geniusButton" onclick="click(1)">1</div>
+                <div order=3 class="geniusButton" onclick="click(2)">2</div>
+                <div order=4 class="geniusButton" onclick="click(3)">3</div>
+                <div order=5 class="geniusButton" onclick="click(4)">4</div>
+                <div order=6 class="geniusButton" onclick="click(5)">5</div>
+                <div order=7 class="geniusButton" onclick="click(6)">6</div>
+                <div order=8 class="geniusButton" onclick="click(7)">7</div>
+                <div order=9 class="geniusButton" onclick="click(8)">8</div>
+            </div>
         </section>
 
         <section id="scoreSection">
@@ -84,12 +90,14 @@
             </div>
         </section>
     </main>
+
     <footer>
         <section id="authorIfo">
             <small>criado por mariana spinola e marcelo soares</small>
             <small>2021 - kenzie academy</small>
         </section>
     </footer>
+    <script src="js/html.js"></script>
     <script src="js/createElements.js"></script>
 </body>
 
