@@ -50,24 +50,13 @@
             </div>
 
         </section>
+        <div class="playButton">
+            <button id="playButton" class="geniusGameInteraction">
+                play
+            </button>
+        </div>
 
-        <section id="feedbackSection">
-
-            <div class="gameLedPainel-template">
-                <div class="led lvl.1"></div>
-                <div class="led lvl.2"></div>
-                <div class="led lvl.3"></div>
-                <div class="led lvl.4"></div>
-                <div class="led lvl.5"></div>
-            </div>
-
-            <div class="feedbackButtons">
-                <button id="playButton" class="geniusGameInteraction">jogar</button>
-                <p id="feedback" class="geniusGameInteraction">acertou!</p>
-            </div>
-
-        </section>
-
+        <!-- led reaction -->
         <section id="geniusSection">
             <div class="gameLedPainel-template">
                 <div class="led lvl.1"></div>
@@ -76,38 +65,40 @@
                 <div class="led lvl.4"></div>
                 <div class="led lvl.5"></div>
             </div>
-
+            <!-- botoes -->
             <div id="game-template">
-                <div order=1 class="geniusButton"></div>
-                <div order=2 class="geniusButton"></div>
-                <div order=3 class="geniusButton"></div>
-                <div order=4 class="geniusButton"></div>
-                <div order=5 class="geniusButton"></div>
-                <div order=6 class="geniusButton"></div>
-                <div order=7 class="geniusButton"></div>
-                <div order=8 class="geniusButton"></div>
-                <div order=9 class="geniusButton"></div>
+                <div order=1 class="geniusButton" onclick="click(0)">0</div>
+                <div order=2 class="geniusButton" onclick="click(1)">1</div>
+                <div order=3 class="geniusButton" onclick="click(2)">2</div>
+                <div order=4 class="geniusButton" onclick="click(3)">3</div>
+                <div order=5 class="geniusButton" onclick="click(4)">4</div>
+                <div order=6 class="geniusButton" onclick="click(5)">5</div>
+                <div order=7 class="geniusButton" onclick="click(6)">6</div>
+                <div order=8 class="geniusButton" onclick="click(7)">7</div>
+                <div order=9 class="geniusButton" onclick="click(8)">8</div>
             </div>
         </section>
 
         <section id="scoreSection">
             <div id="highestScore" class="scoreWrapper">
                 <p>maior pontuação</p>
-                <p class="score">0</p>
+                <p class="score scoreHighest"></p>
             </div>
 
             <div id="currentScore" class="scoreWrapper">
                 <p>pontuação atual</p>
-                <p class="score">0</p>
+                <p class="score scoreCurrent"></p>
             </div>
         </section>
     </main>
+
     <footer>
         <section id="authorIfo">
             <small>criado por mariana spinola e marcelo soares</small>
             <small>2021 - kenzie academy</small>
         </section>
     </footer>
+    <script src="js/html.js"></script>
     <script src="js/createElements.js"></script>
 </body>
 
