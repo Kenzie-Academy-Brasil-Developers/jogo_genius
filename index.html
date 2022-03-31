@@ -13,40 +13,43 @@
     <header>
     </header>
     <main>
-        <section class="rulesSection">
-
-            <button id="buttonRules">como jogar</button>
-
-            <div id="rulesPopUp">
-                <h2>como jogar o desafio de genius</h2>
-
-                <div id="purpose">
-                    <h3>objetivo:</h3>
-                    <ul class="rulesList">
-                        <li>Repetir corretamente a sequência de sinais, cada vez mais longa.</li>
-                    </ul>
-                </div>
-                <div id="rules">
-                    <h3>regras:</h3>
-                    <ol>
-                        <li>Aperte o botão de partida. O <span class="geniusTitle">genius</span> já vai dar o seu
-                            primeiro sinal!</li>
-                        <li>O jogo começou: repita o sinal, pressionando a mesma lente colorida que brilhar.</li>
-                        <li><span class="geniusTitle">genius</span> repetirá o primeiro sinal e vai acrescentar mais um
-                            a cada rodada enquanto você conseguir repetir cada sequência de sinais corretamente.</li>
-                        <li>Repita então os sinais, pressionando as lentes coloridas que brilharem em
-                            cada sequência.</li>
-                        <li>Observe que <span class="geniusTitle">genius</span> aumenta o ritmo automaticamente.</li>
-                        <li>Se você não repetir alguma sequência corretamente ou demorar mais de 5 segundos para repetir
-                            um sinal,<span class="geniusTitle">genius</span> responderá com um som grave. É o sinal da
-                            derrota:você perdeu o jogo e a sequência de sinais acabou.</li>
-                    </ol>
-                </div>
-
+        <section id="rulesSection">
+            <div class="rulesButtonWrapper">
+                <button id="buttonRules" class="trigger">como jogar</button>
             </div>
+
+            <div class="modal show-modal">
+                <div class="rulesWrapper">
+                    <button type="button" class="closeButton" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2>como jogar</h2>
+
+                    <div id="rules" class="rulesList">
+                        <ol>
+                            <li>Aperte o botão de partida. O <span class="geniusTitle">genius</span> já vai dar o
+                                seu primeiro sinal!</li>
+                            <li>O jogo começou: repita o sinal, pressionando a lente colorida que brilhar.
+                            </li>
+                            <li>A cada rodada o<span class="geniusTitle">&nbspgenius</span> repetirá o primeiro sinal e
+                                vai acrescentar
+                                mais um, sempre enquanto você conseguir repetir cada sequência corretamente.
+                            </li>
+                            <li>Observe que <span class="geniusTitle">genius</span> aumenta o ritmo
+                                automaticamente.
+                            </li>
+                            <li>Se você errar alguma sequência ou demorar mais de 5 segundos para repetir um sinal,
+                                <span class="geniusTitle">genius</span> reiniciará. Esse é o sinal da derrota:você
+                                perdeu o jogo e a sequência de sinais acabou.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
-        <section id = "feedbackSection">
+        <section id="feedbackSection">
 
             <div class="gameLedPainel-template">
                 <div class="led lvl.1"></div>
@@ -60,11 +63,11 @@
                 <button id="playButton" class="geniusGameInteraction">jogar</button>
                 <p id="feedback" class="geniusGameInteraction">acertou!</p>
             </div>
-            
+
         </section>
 
-        <section id = "geniusSection">
-            <div class ="gameLedPainel-template">
+        <section id="geniusSection">
+            <div class="gameLedPainel-template">
                 <div class="led lvl.1"></div>
                 <div class="led lvl.2"></div>
                 <div class="led lvl.3"></div>

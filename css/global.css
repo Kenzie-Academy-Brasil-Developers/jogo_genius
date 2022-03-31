@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');/*h1 font*/
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap'); /*h2 font*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap'); /*h3 font*/
 /*
 #F06060
 #F3B562
@@ -29,15 +30,23 @@ h2{
     text-transform: uppercase;
 }
 
+h3{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    color: #5C4B51;
+}
+p, li{
+    font-family: 'Kumbh Sans', sans-serif;
+}
 button{
-    background-color: #F3B562;
+    background-color: #F06060;
     font-family: 'Jura', sans-serif;
-    color:#5C4B51;
-    border: transparent;
-    border-radius: 20px;
-    padding: 10px 15px;
-    width: 10vw;
-    font-size: 17px;
+    color:#F2EBBF;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.geniusTitle{
+    text-transform: uppercase;
 }
