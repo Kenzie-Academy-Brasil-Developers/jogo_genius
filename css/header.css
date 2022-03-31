@@ -4,10 +4,15 @@
     flex-direction: column-reverse;
     align-items: center;
     padding: 25px 0;
+    box-shadow: 1px 10px 20px 4px rgba(138, 138, 138, 0.733);
 }
+#titleSection> h1{
+    margin-bottom: 20px;
 
+}
 #titleSection > h2{
-    background-color: #F3B562;
-    padding: 10px 20px ;
+    background-color: #f3b462;
+    padding: 1vh 15vw ;
     border-radius: 20px;
+    margin-bottom: 20px;
 } 
