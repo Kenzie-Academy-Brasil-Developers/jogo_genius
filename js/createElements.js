@@ -3,15 +3,22 @@ let clickedOrder = [];
 let score = 0;
 let timeLimit;
 
+const currentScore = document.querySelector('.scoreCurrent');
+currentScore.innerHTML = 0;
+const highestScore = document.querySelector('.scoreHighest')
+highestScore.innerHTML = 0;
+
 const buttonsGameTemplate = document.getElementById('game-template').children;
 
 function playGame() {
     score = 0;
+    currentScore.innerHTML = score;
     nextLevel();
 }
 
 function nextLevel (){
     shuffleOrder();
+    currentScore.innerHTML = score;
 
     timeLimit = setTimeout(() => {
         let msgGameOver = "Limite de tempo estourado! "
@@ -19,8 +26,6 @@ function nextLevel (){
     }, 5000);
 
     for(let i=0; i < buttonsGameTemplate.length; i++) {
-        console.log("ButtonTemplate " + buttonsGameTemplate[i].innerHTML)
-        console.log('I ' + i)
         buttonsGameTemplate[i].onclick = () => click(i);
     }
 
@@ -75,7 +80,6 @@ function checkOrder () {
     for (let i = 0; i < clickedOrder.length; i++) {
         if((clickedOrder[i]) != order[i]) {
             gameOver("");
-            break;
         }
     }
 
@@ -87,7 +91,17 @@ function checkOrder () {
 }
 
 function gameOver(msg) {
+
+    let maxScore = highestScore.innerHTML;
+    if(score > maxScore) {
+        maxScore = score;
+        highestScore.innerHTML = score;
+    }
+
+    clearTimeout(timeLimit)
+    score = 0;
     confirm(`${msg}Game Over!\nPontuação: ${score}`);
+    currentScore.innerHTML = `<p>${0}</p>`;
     
     order = [];
     clickedOrder = [];
