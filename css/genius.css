@@ -53,16 +53,36 @@
     width: 100%;
 }
 
-.led{
+/*ESTRUTURA DOS LED PARA MUDAR DE COR - ANTES DE INICIAR - AO ACERTAR - AO ERRAR */
+
+#ledStructure{
     height: 38px;
     width: 38px;
     border-radius: 50%;
     border: solid 5px #202020;
-    /* background-image: url(); */
+    box-shadow: -2px 7px #827e7f;
+}
+
+/*CLASSES DOS LED RELATIVOS AS CORES*/
+
+.led{
     background-color: #5C4B51;
     background-size: contain;
     box-shadow: -2px 7px #827e7f;
 }
+
+.ledCorrect{
+    background-color: rgb(91, 211, 80);
+    background-size: contain;
+    box-shadow: -2px 7px #827e7f;
+} */
+
+.ledIncorrect{
+    background-color: red;
+    background-size: contain;
+    box-shadow: -2px 7px #827e7f;
+}
+
 
 /*buttons*/
 
