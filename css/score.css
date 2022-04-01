@@ -1,0 +1,22 @@
+#scoreSection{
+    display: grid;
+    gap: 5vw;
+    grid-template-columns:repeat(2, 15%);
+    flex: 1;
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+    /* height: 15vh; */
+}
+.scoreWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #F3B562;
+    border-radius: 20px;
+}
+
+.scoreWrapper > h4{
+    padding-bottom: 5%;
+}

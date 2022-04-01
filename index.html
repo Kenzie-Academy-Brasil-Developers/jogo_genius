@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius</title>
+    <link rel="stylesheet" href="css/links.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <section id="rulesSection">
+
+            <div class="rulesButtonWrapper">
+                <button id="buttonRules" class="btn trigger">como jogar</button>
+            </div>
+
+            <div class="modal show-modal">
+
+                <div class="rulesWrapper">
+                    <button type="button" class="closeButton" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2>como jogar</h2>
+
+                    <div id="rules" class="rulesList">
+                        <ol>
+                            <li>Aperte o botão de partida. O <span class="geniusTitle">genius</span> já vai dar o
+                                seu primeiro sinal!</li>
+                            <li>O jogo começou: repita o sinal, pressionando a lente colorida que brilhar.
+                            </li>
+                            <li>A cada rodada o<span class="geniusTitle">&nbspgenius</span> repetirá o primeiro sinal e
+                                vai acrescentar
+                                mais um, sempre enquanto você conseguir repetir cada sequência corretamente.
+                            </li>
+                            <li>Observe que <span class="geniusTitle">genius</span> aumenta o ritmo
+                                automaticamente.
+                            </li>
+                            <li>Se você errar alguma sequência ou demorar mais de 5 segundos para repetir um sinal,
+                                <span class="geniusTitle">genius</span> reiniciará. Esse é o sinal da derrota:você
+                                perdeu o jogo e a sequência de sinais acabou.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="playButtonWrapper">
+            <button id="playButton" class="btn">
+                play
+            </button>
+        </div>
+        <section id="geniusSection">
+            <div class="painelWrapper">
+                <div class="painelElements">
+                    <!-- led reaction -->
+                    <div class="gameLedPainel-template">
+                        <div id="ledStructure" class="led"></div>
+                        <div id="ledStructure" class="led"></div>
+                        <div id="ledStructure" class="led"></div>
+                        <div id="ledStructure" class="led"></div>
+                        <div id="ledStructure" class="led"></div>
+                    </div>
+
+                    <!-- botoes -->
+                    <div id="game-template">
+                        <div order=1 class="geniusButton geniusButtonActive"></div>
+                        <div order=2 class="geniusButton geniusButtonActive"></div>
+                        <div order=3 class="geniusButton geniusButtonActive"></div>
+                        <div order=4 class="geniusButton geniusButtonActive"></div>
+                        <div order=5 class="geniusButton geniusButtonActive"></div>
+                        <div order=6 class="geniusButton geniusButtonActive"></div>
+                        <div order=7 class="geniusButton geniusButtonActive"></div>
+                        <div order=8 class="geniusButton geniusButtonActive"></div>
+                        <div order=9 class="geniusButton geniusButtonActive"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="scoreSection">
+            
+                <div id="highestScore" class="scoreWrapper">
+                    <h4>maior pontuação</h4>
+                    <p class="score scoreHighest"></p>
+                </div>
+    
+                <div id="currentScore" class="scoreWrapper">
+                    <h4>pontuação atual</h4>
+                    <p class="score scoreCurrent"></p>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="authorInfo">
+            <small class="authorName">criado por: mariana spinola e marcelo soares</small>
+            <small class="year-place">2021 - kenzie academy</small>
+        </section>
+    </footer>
+    <script src="js/html.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/gameInteraction.js"></script>
+</body>
+
+</html>

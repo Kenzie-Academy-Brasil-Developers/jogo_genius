@@ -1,0 +1,94 @@
+#rulesSection{
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn{
+    border: transparent;
+    border-radius: 20px;
+    width: 20vw;
+    padding: 10px 15px;
+    font-size: 2rem;
+    transition: 0.1s;
+    box-shadow: 1px 13px 10px 0 rgba(102,102,102,0.81);
+}
+
+.btn:active{
+    background-color:#F3B562;
+    color: #5C4B51;
+}
+
+
+.modal{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.show-modal{
+    opacity: 1;
+    visibility:visible;
+    transition:visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.rulesWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+    background-color:#F2EBBF;
+}
+
+.closeButton{
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 50px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #8CBEB2;
+    color: #F2EBBF;
+    transition: 0.1s;
+}
+
+.closeButton:active{
+    background-color: #F06060;
+    color:#F2EBBF;
+}
+
+.rulesWrapper > h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.rulesList{
+    padding: 15px 30px ;
+    width: 45vw;
+}
+
+.rulesList li{
+    list-style-type:lower-alpha;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    line-height: 3vh;
+}

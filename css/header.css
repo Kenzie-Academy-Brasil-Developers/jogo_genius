@@ -1,0 +1,26 @@
+#titleSection{
+    background-color: #8CBEB2;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 1px 10px 20px 4px rgba(138, 138, 138, 0.733);
+}
+
+#titleSection> h1{
+    margin: 20px;
+    padding: 25px 0;
+
+}
+#titleSection > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: #f3b462;
+    padding: 20px;
+    width: 55vw;
+    height: 10vh;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+} 
