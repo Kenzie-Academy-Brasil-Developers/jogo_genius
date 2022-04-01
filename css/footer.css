@@ -1,0 +1,16 @@
+#authorInfo{
+    font-family: 'Jura', sans-serif;;
+    display: flex;
+    width: 100vw;
+    margin-top: 5vh;
+    padding: 20px 0;
+    background-color: #8CBEB2;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.authorName{
+    padding-bottom: 10px;
+
+}
