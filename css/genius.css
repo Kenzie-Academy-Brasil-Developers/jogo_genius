@@ -4,9 +4,7 @@
     justify-content: center;
     
 }
-.playButtonWrapper > #playButton{
-    width: 11vw;
-}
+
 .playButtonWrapper > #playButton:active{
     background-color:#F3B562;
     color: #5C4B51;

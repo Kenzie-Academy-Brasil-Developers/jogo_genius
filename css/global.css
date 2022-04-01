@@ -10,25 +10,22 @@
 #666666
 */
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 body{
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
+    max-width: 100vw;
     height: 100%;
     min-height: 100vh;
-    max-width: 100vw;
     background-color: #F2EBBF;
 
 }
 
 h1{
-    text-align: center;
     color: #F06060;
     font-family: 'MuseoModerno', cursive;
     font-size: 6em;
@@ -57,9 +54,10 @@ h4{
 p, li{
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 button{
-    background-color: #F06060;
     font-family: 'Jura', sans-serif;
+    background-color: #F06060;
     color:#F2EBBF;
     text-transform: uppercase;
     cursor: pointer;

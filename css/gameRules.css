@@ -1,6 +1,6 @@
 #rulesSection{
-    margin: 10vh 0;
     display: flex;
+    margin: 10vh 0;
     justify-content: center;
     align-items: center;
 
@@ -9,7 +9,7 @@
 .btn{
     border: transparent;
     border-radius: 20px;
-    width: fit-content;
+    width: 20vw;
     padding: 10px 15px;
     font-size: 2rem;
     transition: 0.1s;
