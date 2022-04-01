@@ -31,3 +31,4 @@ function headerElements() {
     databaseHeader.forEach((titleTag) =>
     createHeaderElements(titleTag.title, titleTag.subtitle))
 }
+
