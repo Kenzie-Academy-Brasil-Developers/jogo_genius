@@ -1,6 +1,7 @@
 #rulesSection{
     display: flex;
-    margin: 10vh 0;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
     justify-content: center;
     align-items: center;
 
