@@ -6,7 +6,7 @@
 
 }
 
-#buttonRules{
+.btn{
     border: transparent;
     border-radius: 20px;
     width: fit-content;
@@ -16,9 +16,9 @@
     box-shadow: 1px 13px 10px 0 rgba(102,102,102,0.81);
 }
 
-#buttonRules:active{
-    background-color: #8CBEB2;
-    color:#F2EBBF;
+.btn:active{
+    background-color:#F3B562;
+    color: #5C4B51;
 }
 
 
