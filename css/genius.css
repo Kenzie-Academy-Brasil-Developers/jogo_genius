@@ -87,9 +87,22 @@
     cursor: not-allowed;
 }
 
-/* .geniusButtonActive{
+.geniusButtonActive{
     background: #c7c0c0;
     box-shadow: 0px 0px 0px 4px rgb(10 10 10);
     border: inset 4px #505050;
     cursor: pointer;
-} */
+}
+
+.selected {
+    opacity: 0.8;
+    background-color: red;
+}
+
+.ledCorrect {
+    background-color: rgb(9, 210, 9);
+}
+
+.ledIncorrect {
+    background-color: red;
+}
