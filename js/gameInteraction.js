@@ -105,7 +105,7 @@ function checkOrder () {
             }, 50);
             setTimeout(() => {
                 led.forEach(elem => elem.classList.remove('ledIncorrect'))
-            }, 350)
+            }, 450)
 
             gameOver("Sequência incorreta! ");
         }
@@ -120,7 +120,7 @@ function checkOrder () {
         }, 50);
         setTimeout(() => {
             led.forEach(elem => elem.classList.remove('ledCorrect'))
-        }, 350)
+        }, 450)
         nextLevel();
     }
 }
@@ -128,6 +128,7 @@ function checkOrder () {
 function gameOver(msg) {
 
     buttonPlay.style.visibility = 'visible';
+    buttonPlay.innerText = 'Jogar novamente'
     buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'));
 
     let maxScore = highestScore.innerHTML;
@@ -137,7 +138,7 @@ function gameOver(msg) {
     }
 
     clearTimeout(timeLimit)
-    confirm(`${msg}Game Over!\nPontuação: ${score}`);
+    //confirm(`${msg}Game Over!\nPontuação: ${score}`);
     score = 0;
     currentScore.innerText = `${0}`;
    
