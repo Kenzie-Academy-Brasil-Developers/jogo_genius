@@ -19,9 +19,10 @@ buttonPlay.addEventListener("click", playGame);
 
 function playGame() {
     buttonPlay.style.visibility = 'hidden';
-
     score = 0;
     currentScore.innerText = score;
+    
+    buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'))
     nextLevel();
 }
 
@@ -29,7 +30,6 @@ function nextLevel (){
 
     //buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'))
     // buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'))
-    
     shuffleOrder();
 
     currentScore.innerHTML = score;
@@ -48,10 +48,15 @@ function shuffleOrder(){
     let colorOrderRandom = Math.floor(Math.random() * 9);
     order.push(colorOrderRandom);
     clickedOrder = [];
-
+    
+    buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'));
     for (let i=0; i < order.length; i++) {
         lightColor(order[i], Number(i) + 1)
-    }    
+    }
+    const tamanhoSequencia = order.length;
+    setTimeout(() => {
+        buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive')) 
+    }, 600 * tamanhoSequencia);
 }
 
 function lightColor(element, number) {
@@ -102,7 +107,7 @@ function checkOrder () {
                 led.forEach(elem => elem.classList.remove('ledIncorrect'))
             }, 350)
 
-            gameOver("");
+            gameOver("Sequência incorreta! ");
         }
     }
 
@@ -123,6 +128,7 @@ function checkOrder () {
 function gameOver(msg) {
 
     buttonPlay.style.visibility = 'visible';
+    buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'));
 
     let maxScore = highestScore.innerHTML;
     if(score > maxScore) {
