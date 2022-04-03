@@ -15,10 +15,18 @@ buttonsGameTemplate.forEach(elem => elem.style.fontSize = '0');
 const buttonPlay = document.getElementById('playButton');
 const led = document.querySelectorAll('.led')
 
+const divMsgGameOver = document.querySelector('.msgGameOver');
+const msgFeedback = document.createElement('p');
+msgFeedback.classList.add('btn');
+msgFeedback.style.visibility = 'hidden';
+divMsgGameOver.appendChild(msgFeedback);
+
 buttonPlay.addEventListener("click", playGame);
 
 function playGame() {
     buttonPlay.style.visibility = 'hidden';
+    msgFeedback.innerHTML = `Observe`
+    msgFeedback.style.visibility = 'visible'
     score = 0;
     currentScore.innerText = score;
     
@@ -128,6 +136,7 @@ function checkOrder () {
 function gameOver(msg) {
 
     buttonPlay.style.visibility = 'visible';
+    msgFeedback.style.visibility = 'visible';
     buttonPlay.innerText = 'Jogar novamente'
     buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'));
 
@@ -137,8 +146,11 @@ function gameOver(msg) {
         highestScore.innerHTML = score;
     }
 
-    clearTimeout(timeLimit)
-    //confirm(`${msg}Game Over!\nPontuação: ${score}`);
+    clearTimeout(timeLimit);
+
+    msgFeedback.innerHTML = `${msg}<br>Game Over!`;
+    msgFeedback.style.marginLeft = '10px';
+
     score = 0;
     currentScore.innerText = `${0}`;
    
