@@ -25,7 +25,6 @@ buttonPlay.addEventListener("click", playGame);
 
 function playGame() {
     buttonPlay.style.visibility = 'hidden';
-    msgFeedback.innerHTML = `Observe`
     msgFeedback.style.visibility = 'visible'
     score = 0;
     currentScore.innerText = score;
@@ -35,9 +34,7 @@ function playGame() {
 }
 
 function nextLevel (){
-
-    //buttonsGameTemplate.forEach(elem => elem.classList.remove('geniusButtonActive'))
-    // buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'))
+    msgFeedback.innerText = `Observe`;
     shuffleOrder();
 
     currentScore.innerHTML = score;
@@ -63,7 +60,8 @@ function shuffleOrder(){
     }
     const tamanhoSequencia = order.length;
     setTimeout(() => {
-        buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive')) 
+        buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'));
+        msgFeedback.innerText = `Reproduza`;
     }, 600 * tamanhoSequencia);
 }
 
