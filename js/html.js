@@ -31,3 +31,32 @@ function headerElements() {
     databaseHeader.forEach((titleTag) =>
     createHeaderElements(titleTag.title, titleTag.subtitle))
 }
+
+//CRIAÇÃO TEMPLATE DO JOGO
+
+const playButtonWrapper = document.querySelector('.playButtonWrapper');
+
+const playButton = document.createElement('button');
+playButton.id = 'playButton';
+playButton.classList.add('btn');
+playButton.innerText = 'play';
+playButtonWrapper.appendChild(playButton);
+
+// criando leds de feedback
+const gameLedPainelTemplate = document.querySelector('.gameLedPainel-template');
+for(let i=0; i <= 4; i++) {
+    const led = document.createElement('div');
+    led.classList.add('led');
+    gameLedPainelTemplate.appendChild(led);
+}
+
+// criando botões do genius
+const gameTemplate = document.getElementById('game-template')
+for(let i=0; i < 9; i++) {
+    const geniusButton = document.createElement('div');
+    geniusButton.innerHTML = `<div order=${(i+1)}>${i}</div>`;
+    geniusButton.classList.add('geniusButton');
+    geniusButton.style.fontSize = '0';
+    gameTemplate.appendChild(geniusButton);
+}
+
