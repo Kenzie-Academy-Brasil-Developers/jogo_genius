@@ -10,8 +10,6 @@ const highestScore = document.querySelector('.scoreHighest')
 highestScore.innerHTML = 0;
 
 const buttonsGameTemplate = document.querySelectorAll('.geniusButton');
-buttonsGameTemplate.forEach(elem => elem.style.fontSize = '0');
-
 const buttonPlay = document.getElementById('playButton');
 const led = document.querySelectorAll('.led')
 
@@ -29,7 +27,7 @@ function playGame() {
     score = 0;
     currentScore.innerText = score;
     
-    buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'))
+    buttonsGameTemplate.forEach(elem => elem.classList.add('geniusButtonActive'));
     nextLevel();
 }
 
@@ -42,7 +40,7 @@ function nextLevel (){
     timeLimit = setTimeout(() => {
         let msgGameOver = "Limite de tempo estourado! "
         gameOver(msgGameOver);
-    }, 5000);
+    }, 7000);
     
     for(let i=0; i < buttonsGameTemplate.length; i++) {
         buttonsGameTemplate[i].onclick = () => click(i);
@@ -70,7 +68,7 @@ function lightColor(element, number) {
     
     for (let i=0; i < buttonsGameTemplate.length; i++) {
         
-        if (buttonsGameTemplate[i].innerHTML == element) {
+        if (buttonsGameTemplate[i].innerText == element) {
             setTimeout(() => {
                 buttonsGameTemplate[i].classList.add('selected')
             }, (number - 250));
