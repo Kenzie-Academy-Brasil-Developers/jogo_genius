@@ -55,7 +55,8 @@ p, li{
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-button{
+button, .btn{
+    text-align: center;
     font-family: 'Jura', sans-serif;
     background-color: #F06060;
     color:#F2EBBF;

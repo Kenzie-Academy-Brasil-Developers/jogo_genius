@@ -10,6 +10,10 @@
     color: #5C4B51;
 }
 
+.btn{
+    width: fit-content;
+}
+
 #geniusSection{
     display: flex;
     z-index: 5;
@@ -96,6 +100,10 @@
 
 .selected {
     opacity: 0.8;
+    background-color: red;
+}
+
+#buttonPlay{
     background-color: red;
 }
 
